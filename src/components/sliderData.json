@@ -1,0 +1,38 @@
+[
+    {
+        "cardInfo": "Announcement",
+        "title": "We’re investing $3B in AI to accelerate clients’ reinvention",
+        "content": "We’re launching Accenture AI Navigator for Enterprise to help our clients across all industries rapidly and responsibly put the promise and power of AI to work.",
+        "buttomBoldText": "$3B",
+        "buttomContext": "Investment in AI over three years",
+        "image": "https://www.diyadinnet.com/d/bilgi/mor-hangi-renklerden-olusur-408.jpg",
+        "color": "fff"
+    },
+    {
+        "cardInfo": "Research Report",
+        "title": "State of Cybersecurity Resilience 2023",
+        "content": "Cyber transformers are excelling at both business resilience and business outcomes—with high-performing cybersecurity propelling their digital transformations forward.",
+        "buttomBoldText": "$5.8x",
+        "buttomContext": "more likely that cyber transformers have more effective digital transformations.",
+        "image": "https://dynamicmedia.accenture.com/is/image/accenture/Cyber-Featured-Image-Glance-skim-640x904:rad-card-full?fit=constrain&dpr=off",
+        "color": "333"
+    },
+    {
+        "cardInfo": "Announcement",
+        "title": "We’re investing $3B in AI to accelerate clients’ reinvention",
+        "content": "We’re launching Accenture AI Navigator for Enterprise to help our clients across all industries rapidly and responsibly put the promise and power of AI to work.",
+        "buttomBoldText": "$3B",
+        "buttomContext": "Investment in AI over three years",
+        "image": "https://dynamicmedia.accenture.com/is/image/accenture/Accenture-Metaverse-DaVita-Skim-640x452:rad-card-portrait?ts=1689927832930&fit=constrain&dpr=off",
+        "color": "333"
+    },
+    {
+        "cardInfo": "Announcement",
+        "title": "We’re investing $3B in AI to accelerate clients’ reinvention",
+        "content": "We’re launching Accenture AI Navigator for Enterprise to help our clients across all industries rapidly and responsibly put the promise and power of AI to work.",
+        "buttomBoldText": "$3B",
+        "buttomContext": "Investment in AI over three years",
+        "image": "https://dynamicmedia.accenture.com/is/image/accenture/Net-Zero_Glance-Card-640x904_50kb:rad-card-full?ts=1689930793806&fit=constrain&dpr=off",
+        "color": "333"
+    }
+]

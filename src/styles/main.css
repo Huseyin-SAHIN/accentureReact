@@ -1,0 +1,713 @@
+.headerOpenClose {
+  position: absolute;
+  margin: 1rem;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+  z-index: 999999;
+}
+
+#header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #000;
+  height: 90px;
+}
+#header .headerControl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  height: 90px;
+  position: relative;
+  z-index: 999;
+  padding: 0 8rem;
+}
+#header .headerControl .headerContent {
+  display: flex;
+  flex: 1;
+}
+#header .headerControl .headerContent .logo {
+  overflow: hidden;
+  max-height: 41px;
+  cursor: pointer;
+}
+#header .headerControl .headerContent .logo:hover img {
+  width: 15px;
+  transform: translateX(80px);
+}
+#header .headerControl .headerContent .logo img {
+  width: 40px;
+  transition: transform 550ms cubic-bezier(0.85, 0, 0, 1), width 550ms cubic-bezier(0.85, 0, 0, 1);
+}
+#header .headerControl .headerContent .logo span {
+  display: block;
+  font-weight: bold;
+  font-size: 32px;
+  position: relative;
+  transform: translateY(-50%);
+  margin-top: 4%;
+}
+#header .headerControl .headerContent .menuBar {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+#header .headerControl .headerContent ul {
+  display: flex;
+  gap: 1rem;
+}
+#header .headerControl .headerContent ul li {
+  list-style: none;
+}
+#header .headerControl .headerContent ul li.active button {
+  color: #a2a2a0;
+}
+#header .headerControl .headerContent ul li.active button svg {
+  transform: rotate(180deg);
+}
+#header .headerControl .headerContent ul li.active .menuBarContent {
+  height: 500px;
+  z-index: 99;
+  display: flex;
+}
+#header .headerControl .headerContent ul li button {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+  color: #fff;
+  margin: 1rem;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+#header .headerControl .headerContent ul li button svg {
+  font-size: 20px;
+  transition: 0.3s ease-in-out;
+}
+#header .headerControl .headerContent ul li .menuBarContent {
+  display: none;
+  justify-content: space-between;
+  gap: 5rem;
+  height: 0;
+  width: 100%;
+  background: #202020;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: 0.3s;
+  overflow: hidden;
+  padding: 0 80px;
+}
+#header .headerControl .headerContent ul li .menuBarContent .menuBarContentLeftSide {
+  width: 25%;
+  padding: 80px 0;
+}
+#header .headerControl .headerContent ul li .menuBarContent .menuBarContentLeftSide h2 {
+  padding: 1rem 0;
+  font-size: 1.75rem;
+}
+#header .headerControl .headerContent ul li .menuBarContent .menuBarContentLeftSide p {
+  color: #a2a2a0;
+  font-size: 14px;
+}
+#header .headerControl .headerContent ul li .menuBarContent .menuBarContentRightSide {
+  padding: 80px 0;
+  flex: 1;
+}
+#header .headerControl .headerContent ul li .menuBarContent .menuBarContentRightSide ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#header .headerControl .headerContent ul li .menuBarContent .menuBarContentRightSide ul li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+#header .headerControl .headerContent ul li .menuBarContent .menuBarContentRightSide ul li a {
+  color: #fff;
+  text-decoration: none;
+  word-wrap: wrap;
+  font-weight: bold;
+}
+#header .headerControl .headerContent ul li .menuBarContent .menuBarContentRightSide ul li a:hover {
+  text-decoration: underline;
+}
+#header .headerControl .headerRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+#header .headerControl .headerRight .search {
+  font-size: 20px;
+}
+#header .headerControl .headerRight .languageSelection {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+#header .headerControl .headerRight .languageSelection svg {
+  display: block;
+  font-size: 25px;
+}
+#header .headerControl .headerRight .languageSelection span {
+  font-size: 16px;
+}
+#header .headerControl .headerRight .selectedCountryMenu {
+  background: #202020;
+  position: absolute;
+  width: 200px;
+  top: 100%;
+  right: 0;
+  padding: 1rem;
+  display: none;
+  overflow: hidden;
+  z-index: 99;
+}
+#header .headerControl .headerRight .selectedCountryMenu.active {
+  display: block;
+}
+#header .headerControl .headerRight .selectedCountryMenu ul li {
+  list-style: none;
+  font-size: 20px;
+  border-bottom: 1px solid #ddd;
+}
+#header .headerControl .headerRight .selectedCountryMenu ul li button {
+  background: none;
+  color: #fff;
+  border: none;
+  margin: 1rem;
+  width: 100%;
+  text-align: start;
+  cursor: pointer;
+}
+
+#frontPageHero {
+  margin-top: 40px;
+  cursor: pointer;
+}
+#frontPageHero .heroPage .heroBottom {
+  justify-content: end;
+}
+#frontPageHero .heroPage .heroTop,
+#frontPageHero .heroPage .heroBottom {
+  display: flex;
+  transition: 0.5s ease-out;
+  line-height: 1;
+}
+#frontPageHero .heroPage .heroTop .heroAnimation,
+#frontPageHero .heroPage .heroBottom .heroAnimation {
+  overflow: hidden;
+}
+#frontPageHero .heroPage .heroTop .heroAnimation span,
+#frontPageHero .heroPage .heroBottom .heroAnimation span {
+  font-size: 95px;
+  color: #fff;
+  margin: 0 20px;
+  font-weight: bold;
+  position: relative;
+  animation: heroAnimation 2s ease-in-out;
+}
+@keyframes heroAnimation {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+#frontPageHero .heroInfo {
+  overflow: hidden;
+}
+#frontPageHero .heroInfo span {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 1rem;
+  font-size: 30px;
+  color: #fff;
+  padding: 20px;
+  position: relative;
+  animation: heroInfoAnimation 2s ease-in-out;
+}
+@keyframes heroInfoAnimation {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+#frontPageHero .heroInfo svg {
+  background: #A100FF;
+  color: #fff;
+}
+
+#cardDescription {
+  overflow: visible;
+}
+#cardDescription .cardDescriptionControl {
+  display: flex;
+  min-width: 100rem;
+}
+#cardDescription .cardDescriptionControl .cardItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 20%;
+  max-width: 20%;
+  transition: 0.5s cubic-bezier(0.85, 0, 0, 1);
+  overflow: hidden;
+  background-size: cover;
+  margin: 2.5%;
+}
+#cardDescription .cardDescriptionControl .cardItem:hover {
+  min-width: 45%;
+  max-width: calc(640px + 4rem);
+}
+#cardDescription .cardDescriptionControl .cardItem:hover .cardBottom {
+  bottom: 0;
+}
+#cardDescription .cardDescriptionControl .cardItem:hover .cardLink {
+  bottom: 0;
+}
+#cardDescription .cardDescriptionControl .cardItem a {
+  text-decoration: none;
+}
+#cardDescription .cardDescriptionControl .cardItem .cardTop {
+  margin: 0 2rem;
+  margin-top: 4rem;
+}
+#cardDescription .cardDescriptionControl .cardItem .cardTop .cardInfo {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+#cardDescription .cardDescriptionControl .cardItem .cardTop .cardContent {
+  display: flex;
+}
+#cardDescription .cardDescriptionControl .cardItem .cardTop .cardContent h3 {
+  font-size: 22px;
+  margin-right: 2rem;
+  padding-right: 2rem;
+}
+#cardDescription .cardDescriptionControl .cardItem .cardTop .cardContent h3 a {
+  color: inherit;
+}
+#cardDescription .cardDescriptionControl .cardItem .cardTop .cardContent .cardContentInfo {
+  font-size: 14px;
+}
+#cardDescription .cardDescriptionControl .cardItem .cardTop .cardContent .cardContentInfo a {
+  color: inherit;
+}
+#cardDescription .cardDescriptionControl .cardItem .cardBottom {
+  display: flex;
+  position: relative;
+  bottom: -100%;
+  transition: 0.5s cubic-bezier(0.85, 0, 0, 1);
+  padding: 2rem;
+  min-width: 640px;
+}
+#cardDescription .cardDescriptionControl .cardItem .cardBottom a {
+  min-width: 320px;
+  max-width: 320px;
+  padding-right: 2rem;
+  color: inherit;
+}
+#cardDescription .cardDescriptionControl .cardItem .cardBottom a:first-child {
+  min-width: 300px;
+}
+#cardDescription .cardDescriptionControl .cardItem .cardBottom a p:first-child {
+  font-size: 5rem;
+  font-weight: 600;
+}
+#cardDescription .cardDescriptionControl .cardItem .cardBottom .cardLink {
+  margin-top: auto;
+  margin-left: auto;
+}
+#cardDescription .cardDescriptionControl .cardItem .cardBottom .cardLink a {
+  color: inherit;
+}
+#cardDescription .cardDescriptionControl .cardItem .cardBottom .cardLink a .cardLinkDiv {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  align-items: end;
+  font-weight: bold;
+}
+#cardDescription .cardDescriptionControl .cardItem .cardBottom .cardLink a .cardLinkDiv::after {
+  content: "";
+  bottom: -10px;
+  left: 0;
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: 0.5s cubic-bezier(0.85, 0, 0, 1);
+}
+#cardDescription .cardDescriptionControl .cardItem .cardBottom .cardLink a .cardLinkDiv:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+}
+#cardDescription .cardDescriptionControl .cardItem .cardBottom .cardLink a .cardLinkDiv svg {
+  font-size: 18px;
+}
+
+#PageInfo {
+  text-align: center;
+  padding: 80px;
+}
+#PageInfo span {
+  font-size: 10rem;
+  font-weight: bold;
+}
+#PageInfo h3 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  width: 75%;
+  margin: 0 auto;
+}
+
+#clientCarousel {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
+}
+#clientCarousel .clientCarouselControl {
+  display: flex;
+  align-items: end;
+}
+#clientCarousel .clientCarouselControl .clientCarouselImg {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+#clientCarousel .clientCarouselControl .clientCarouselImg .clientCarouselImgItem {
+  width: 100%;
+  height: 100%;
+}
+#clientCarousel .clientCarouselControl .clientCarouselImg .clientCarouselImgItem img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#clientCarousel .clientCarouselControl .clientCarouselInfo {
+  width: 50%;
+}
+#clientCarousel .clientCarouselControl .clientCarouselInfo .clientCarouselInfoItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 15%;
+}
+#clientCarousel .clientCarouselControl .clientCarouselInfo .clientCarouselInfoItem h4 {
+  font-size: 3rem;
+}
+#clientCarousel .clientCarouselControl .clientCarouselInfo .clientCarouselInfoItem a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+#clientCarousel .clientCarouselControl .clientCarouselInfo .clientCarouselInfoItem a .cardForwardingLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+#clientCarousel .clientCarouselControl .clientCarouselInfo .clientCarouselInfoItem a .cardForwardingLink svg {
+  font-size: 24px;
+  background: #A100FF;
+}
+#clientCarousel .sliderControl {
+  margin: 2rem;
+}
+#clientCarousel .sliderControl button {
+  background: none;
+  border: none;
+}
+#clientCarousel .sliderControl button svg {
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+#floatingCardBlock {
+  position: relative;
+}
+#floatingCardBlock .backgroundText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100vh;
+}
+#floatingCardBlock .backgroundText h2 {
+  font-size: 100px;
+  color: #fff;
+  text-align: center;
+}
+#floatingCardBlock .floatingCardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  padding: 0 5vw;
+}
+#floatingCardBlock .floatingCardContent .floatingCard {
+  width: 35rem;
+  max-width: 35rem;
+  height: 24rem;
+  max-height: 24rem;
+  background: #460073;
+  overflow: hidden;
+  padding: 2rem;
+  position: relative;
+}
+#floatingCardBlock .floatingCardContent .floatingCard .CardContentBackground {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.3;
+  transition: 0.3s;
+}
+#floatingCardBlock .floatingCardContent .floatingCard:nth-child(2n) {
+  margin-left: auto;
+  background: #E2062E;
+}
+#floatingCardBlock .floatingCardContent .floatingCard:nth-child(3n) {
+  margin-left: 25%;
+  background: #0041F0;
+}
+#floatingCardBlock .floatingCardContent .floatingCard:hover .CardContentBackground {
+  opacity: 0;
+}
+#floatingCardBlock .floatingCardContent .floatingCard:hover .cardTitle,
+#floatingCardBlock .floatingCardContent .floatingCard:hover .cardContent {
+  transform: translateY(-100%);
+  margin-bottom: 0rem;
+}
+#floatingCardBlock .floatingCardContent .floatingCard .cardTitle h3 {
+  font-size: 24px;
+}
+#floatingCardBlock .floatingCardContent .floatingCard .cardTitle,
+#floatingCardBlock .floatingCardContent .floatingCard .cardContent {
+  height: 100%;
+  transition: 0.5s ease-in-out;
+  margin-bottom: 2rem;
+}
+#floatingCardBlock .floatingCardContent .floatingCard .cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#floatingCardBlock .floatingCardContent .floatingCard .cardContent p {
+  font-size: 22px;
+}
+#floatingCardBlock .floatingCardContent .floatingCard .cardContent .cardForwarding {
+  display: flex;
+  justify-content: end;
+}
+#floatingCardBlock .floatingCardContent .floatingCard .cardContent .cardForwarding a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  position: relative;
+  padding: 1rem 0;
+}
+#floatingCardBlock .floatingCardContent .floatingCard .cardContent .cardForwarding a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: 0.3s cubic-bezier(1, 0.165, 0.165, 1);
+}
+#floatingCardBlock .floatingCardContent .floatingCard .cardContent .cardForwarding a:hover::after {
+  width: 100%;
+}
+#floatingCardBlock .floatingCardContent .floatingCard .cardContent .cardForwarding a .cardForwardingLink {
+  display: flex;
+  align-items: end;
+}
+#floatingCardBlock .floatingCardContent .floatingCard .cardContent .cardForwarding a .cardForwardingLink svg {
+  font-size: 24px;
+}
+
+#mixedMediaTextBlock {
+  display: flex;
+}
+#mixedMediaTextBlock .MediaExhibition {
+  width: 50%;
+  position: relative;
+}
+#mixedMediaTextBlock .MediaExhibition img {
+  width: 100%;
+}
+#mixedMediaTextBlock .MediaExhibition img:first-child {
+  min-width: 100%;
+  max-width: 200%;
+}
+#mixedMediaTextBlock .promotion {
+  width: 50%;
+  padding-left: 10%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+#mixedMediaTextBlock .promotion h3 {
+  font-size: 36px;
+}
+#mixedMediaTextBlock .promotion p {
+  font-size: 24px;
+}
+#mixedMediaTextBlock .promotion a {
+  color: #fff;
+  text-decoration: none;
+}
+#mixedMediaTextBlock .promotion a button {
+  display: flex;
+  align-items: end;
+  background: none;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  gap: 1rem;
+}
+#mixedMediaTextBlock .promotion a button svg {
+  font-size: 24px;
+  background: #A100FF;
+}
+
+#news {
+  display: flex;
+  width: 100%;
+  gap: 9rem;
+  overflow: hidden;
+  padding: 2rem;
+}
+#news .newsItem {
+  min-width: 50%;
+  max-width: 50%;
+  padding: 2rem 0;
+}
+#news .newsItem a {
+  color: #fff;
+  text-decoration: none;
+}
+#news .newsItem a h3 {
+  font-size: 1.5rem;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+}
+#footer .footerLeft {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 7rem 10%;
+  padding-right: 0;
+}
+#footer .footerLeft h4 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+#footer .footerLeft .footerLeftContent .listControl {
+  display: flex;
+  margin-bottom: 2rem;
+}
+#footer .footerLeft .footerLeftContent .listControl ul {
+  width: 12rem;
+  font-size: 15px;
+}
+#footer .footerLeft .footerLeftContent .listControl ul li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+#footer .footerLeft .footerLeftContent .listControl ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+#footer .footerLeft .footerLeftContent .listControl ul li a:hover {
+  color: #a2a2a0;
+}
+#footer .footerLeft .footerLeftContent .listControl ul li a.active {
+  color: #a2a2a0;
+}
+#footer .footerRight {
+  position: relative;
+  right: 0;
+  top: 0;
+  width: 40%;
+  overflow: hidden;
+  display: flex;
+  gap: 1rem;
+}
+#footer .footerRight .footerRightItem {
+  display: flex;
+  overflow: hidden;
+  justify-content: end;
+}
+#footer .footerRight .footerRightItem:nth-child(1), #footer .footerRight .footerRightItem:nth-child(7) {
+  flex: 1;
+}
+#footer .footerRight .footerRightItem:nth-child(1) .change, #footer .footerRight .footerRightItem:nth-child(7) .change {
+  transition-delay: 0.3s;
+}
+#footer .footerRight .footerRightItem:nth-child(2), #footer .footerRight .footerRightItem:nth-child(6) {
+  flex: 2;
+}
+#footer .footerRight .footerRightItem:nth-child(2) .change, #footer .footerRight .footerRightItem:nth-child(6) .change {
+  transition-delay: 0.2s;
+}
+#footer .footerRight .footerRightItem:nth-child(3), #footer .footerRight .footerRightItem:nth-child(5) {
+  flex: 3;
+}
+#footer .footerRight .footerRightItem:nth-child(3) .change, #footer .footerRight .footerRightItem:nth-child(5) .change {
+  transition-delay: 0.1s;
+}
+#footer .footerRight .footerRightItem:nth-child(4) {
+  flex: 4;
+  min-width: 180px;
+}
+#footer .footerRight .footerRightItem .change {
+  display: flex;
+  flex-direction: column-reverse;
+  transition: 0.5s cubic-bezier(1, 0.875, 0.75, 0.75);
+}
+#footer .footerRight .footerRightItem .change span {
+  display: inline-block;
+  transform: rotate(-90deg);
+  font-size: 14rem;
+  font-weight: bold;
+  line-height: 0.9;
+}/*# sourceMappingURL=main.css.map */

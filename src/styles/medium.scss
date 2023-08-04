@@ -1,0 +1,226 @@
+@media screen and (max-width: 776px) {
+
+    #header {
+
+        .headerOpenClose {
+            display: block;
+        }
+
+        .headerControl {
+            height: 100%;
+            align-items: start;
+
+            .headerContent {
+                align-items: start;
+                position: absolute;
+                width: 100%;
+                top: 0;
+                left: 0;
+                background: #202020;
+                height: 100vh;
+                margin-top: 90px;
+                overflow-y: scroll;
+                display: none;
+
+                &.open {
+                    display: block;
+                }
+
+                .logo {
+                    display: none;
+                }
+
+                .menuBar {
+                    justify-content: start;
+                    align-items: center;
+
+
+                    ul {
+                        width: 100%;
+                        display: block;
+
+                        li {
+                            width: 100%;
+                            padding: 1rem 0;
+
+                            &.active {
+
+                                .menuBarContent {
+                                    display: block;
+                                }
+                            }
+
+                            button {
+                                font-size: 1.5rem;
+
+                                svg {
+                                    display: none;
+                                }
+                            }
+
+                            .menuBarContent {
+                                position: static;
+                                padding: 2rem;
+
+                                .menuBarContentLeftSide {
+                                    padding: 0;
+                                    width: 100%;
+                                }
+
+                                .menuBarContentRightSide {
+                                    padding: 0;
+
+                                    ul {
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .headerRight {
+                display: none;
+            }
+        }
+    }
+
+    #cardDescription {
+        overflow-x: auto;
+        display: flex;
+
+        &::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+            display: initial;
+        }
+
+        /* Scroll çubuğu parçası */
+        &::-webkit-scrollbar-thumb {
+            background-color: #fff;
+            /* Scroll çubuğu rengi */
+        }
+
+        /* Scroll çubuğu izi */
+        &::-webkit-scrollbar-track {
+            background-color: #888;
+            /* Scroll çubuğu izi rengi */
+        }
+
+    }
+
+    #clientCarousel {
+        padding: 0 1rem;
+
+        .clientCarouselControl {
+            display: block;
+
+            .clientCarouselImg,
+            .clientCarouselInfo {
+                width: 100%;
+            }
+
+            .clientCarouselInfo {
+                .clientCarouselInfoItem {
+                    padding: 0;
+                    margin-top: 2rem;
+
+                    a {
+                        .cardForwardingLink {
+                            font-size: 18px;
+
+                            svg {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .sliderControl {
+            margin: 1rem 0;
+        }
+    }
+
+    #clientCarousel {
+        .clientCarouselControl {
+            .clientCarouselInfo {
+                .clientCarouselInfoItem {
+
+                    h4 {
+                        font-size: 32px;
+                    }
+
+                    .clientCarouselInfoContext {
+                        font-size: 20px;
+                    }
+
+                    a {
+                        font-size: 1vw;
+                    }
+                }
+            }
+        }
+    }
+
+    #floatingCardBlock {
+        position: relative;
+
+        .backgroundText {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            height: 100vh;
+
+            h2 {
+                color: #fff;
+                text-align: center;
+            }
+        }
+
+        .floatingCardContent {
+
+            .floatingCard {
+
+                .cardTitle {
+                    h3 {
+                        font-size: 18px;
+                    }
+                }
+
+                .cardContent {
+                    p {
+                        font-size: 14px;
+                    }
+
+                    .cardForwarding {
+
+                        a {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #footer {
+        display: block;
+
+        .footerLeft {
+            width: 100%;
+            margin-bottom: 1rem
+        }
+
+        .footerRight {
+            width: 100%;
+        }
+    }
+
+}

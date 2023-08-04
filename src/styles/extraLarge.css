@@ -1,0 +1,40 @@
+@media screen and (max-width: 1500px) {
+  #frontPageHero .heroPage .heroTop .heroAnimation span,
+  #frontPageHero .heroPage .heroBottom .heroAnimation span {
+    font-size: 7vw;
+  }
+  #PageInfo span {
+    font-size: 10vw;
+  }
+  #PageInfo h3 {
+    font-size: 3vw;
+  }
+  #clientCarousel .clientCarouselControl .clientCarouselInfo .clientCarouselInfoItem h4 {
+    font-size: 3vw;
+  }
+  #clientCarousel .clientCarouselControl .clientCarouselInfo .clientCarouselInfoItem .clientCarouselInfoContext {
+    font-size: 2vw;
+  }
+  #clientCarousel .clientCarouselControl .clientCarouselInfo .clientCarouselInfoItem a {
+    font-size: 1vw;
+  }
+  #floatingCardBlock .floatingCardContent .floatingCard {
+    width: 60vw;
+    height: 50vw;
+  }
+  #floatingCardBlock .backgroundText h2 {
+    font-size: 7vw;
+  }
+  #mixedMediaTextBlock .promotion h3 {
+    font-size: 4vw;
+  }
+  #mixedMediaTextBlock .promotion p {
+    font-size: 3vw;
+  }
+  #news .newsItem a h3 {
+    font-size: 1.8vw;
+  }
+  #footer .footerRight {
+    padding: 0 2rem;
+  }
+}/*# sourceMappingURL=extraLarge.css.map */

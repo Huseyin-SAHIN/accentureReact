@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@media screen and (max-width: 776px) {
+  #header .headerOpenClose {
+    display: block;
+  }
+  #header .headerControl {
+    height: 100%;
+    align-items: start;
+  }
+  #header .headerControl .headerContent {
+    align-items: start;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #202020;
+    height: 100vh;
+    margin-top: 90px;
+    overflow-y: scroll;
+    display: none;
+  }
+  #header .headerControl .headerContent.open {
+    display: block;
+  }
+  #header .headerControl .headerContent .logo {
+    display: none;
+  }
+  #header .headerControl .headerContent .menuBar {
+    justify-content: start;
+    align-items: center;
+  }
+  #header .headerControl .headerContent .menuBar ul {
+    width: 100%;
+    display: block;
+  }
+  #header .headerControl .headerContent .menuBar ul li {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  #header .headerControl .headerContent .menuBar ul li.active .menuBarContent {
+    display: block;
+  }
+  #header .headerControl .headerContent .menuBar ul li button {
+    font-size: 1.5rem;
+  }
+  #header .headerControl .headerContent .menuBar ul li button svg {
+    display: none;
+  }
+  #header .headerControl .headerContent .menuBar ul li .menuBarContent {
+    position: static;
+    padding: 2rem;
+  }
+  #header .headerControl .headerContent .menuBar ul li .menuBarContent .menuBarContentLeftSide {
+    padding: 0;
+    width: 100%;
+  }
+  #header .headerControl .headerContent .menuBar ul li .menuBarContent .menuBarContentRightSide {
+    padding: 0;
+  }
+  #header .headerControl .headerContent .menuBar ul li .menuBarContent .menuBarContentRightSide ul {
+    display: block;
+  }
+  #header .headerControl .headerRight {
+    display: none;
+  }
+  #cardDescription {
+    overflow-x: auto;
+    display: flex;
+    /* Scroll çubuğu parçası */
+    /* Scroll çubuğu izi */
+  }
+  #cardDescription::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    display: initial;
+  }
+  #cardDescription::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    /* Scroll çubuğu rengi */
+  }
+  #cardDescription::-webkit-scrollbar-track {
+    background-color: #888;
+    /* Scroll çubuğu izi rengi */
+  }
+  #clientCarousel {
+    padding: 0 1rem;
+  }
+  #clientCarousel .clientCarouselControl {
+    display: block;
+  }
+  #clientCarousel .clientCarouselControl .clientCarouselImg,
+  #clientCarousel .clientCarouselControl .clientCarouselInfo {
+    width: 100%;
+  }
+  #clientCarousel .clientCarouselControl .clientCarouselInfo .clientCarouselInfoItem {
+    padding: 0;
+    margin-top: 2rem;
+  }
+  #clientCarousel .clientCarouselControl .clientCarouselInfo .clientCarouselInfoItem a .cardForwardingLink {
+    font-size: 18px;
+  }
+  #clientCarousel .clientCarouselControl .clientCarouselInfo .clientCarouselInfoItem a .cardForwardingLink svg {
+    font-size: 18px;
+  }
+  #clientCarousel .sliderControl {
+    margin: 1rem 0;
+  }
+  #clientCarousel .clientCarouselControl .clientCarouselInfo .clientCarouselInfoItem h4 {
+    font-size: 32px;
+  }
+  #clientCarousel .clientCarouselControl .clientCarouselInfo .clientCarouselInfoItem .clientCarouselInfoContext {
+    font-size: 20px;
+  }
+  #clientCarousel .clientCarouselControl .clientCarouselInfo .clientCarouselInfoItem a {
+    font-size: 1vw;
+  }
+  #floatingCardBlock {
+    position: relative;
+  }
+  #floatingCardBlock .backgroundText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100vh;
+  }
+  #floatingCardBlock .backgroundText h2 {
+    color: #fff;
+    text-align: center;
+  }
+  #floatingCardBlock .floatingCardContent .floatingCard .cardTitle h3 {
+    font-size: 18px;
+  }
+  #floatingCardBlock .floatingCardContent .floatingCard .cardContent p {
+    font-size: 14px;
+  }
+  #floatingCardBlock .floatingCardContent .floatingCard .cardContent .cardForwarding a {
+    font-size: 18px;
+  }
+  #footer {
+    display: block;
+  }
+  #footer .footerLeft {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  #footer .footerRight {
+    width: 100%;
+  }
+}/*# sourceMappingURL=medium.css.map */
